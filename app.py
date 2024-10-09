@@ -19,3 +19,6 @@ def set_roles(mafia_count: int, peace_count: int):
     roles_count = len(roles)
     return 'ok'
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from Koyeb"}
